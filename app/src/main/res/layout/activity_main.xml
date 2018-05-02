@@ -5,8 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragmentMother"
+        android:layout_above="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+
 
 <LinearLayout
+    android:id="@+id/bottom"
     android:layout_marginBottom="10dp"
     android:orientation="horizontal"
     android:weightSum="5"

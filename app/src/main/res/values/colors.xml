@@ -6,4 +6,5 @@
     <color name="customBlack">#000000</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="customWhite">#ffffff</color>
 </resources>

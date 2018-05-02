@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_centerInParent="true"
-        android:text="Fragment1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
 
-</RelativeLayout>
+        <ImageView
+            android:tint="@color/customGrey800"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+
+        <ImageView
+            android:tint="@color/customGrey800"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_change_history_black_24dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+    <View
+
+        android:background="@color/customGrey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

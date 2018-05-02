@@ -3,6 +3,7 @@
 
     <color name="colorPrimary">#3F51B5</color>
     <color name="customGrey">#E0E0E0</color>
+    <color name="customGrey800">#424242</color>
     <color name="customBlack">#000000</color>
     <color name="customTemp">#009DDB</color>
     <color name="colorPrimaryDark">#303F9F</color>

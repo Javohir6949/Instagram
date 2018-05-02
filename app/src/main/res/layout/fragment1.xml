@@ -18,7 +18,7 @@
 
         <ImageView
             android:layout_centerInParent="true"
-            android:src="@drawable/instagram"
+            android:src="@drawable/insta"
             android:layout_width="wrap_content"
             android:layout_height="35dp" />
 

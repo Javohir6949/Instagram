@@ -5,66 +5,106 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <LinearLayout
-        android:orientation="vertical"
         android:id="@+id/fragmentMother"
-        android:layout_above="@+id/bottom"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical">
 
     </LinearLayout>
 
 
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
 
-<LinearLayout
-    android:id="@+id/bottom"
-    android:layout_marginBottom="10dp"
-    android:orientation="horizontal"
-    android:weightSum="5"
-    android:layout_alignParentBottom="true"
-    android:layout_width="match_parent"
-    android:layout_height="30dp">
+        <RelativeLayout
+            android:id="@+id/allNewClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
-    <ImageView
-        android:id="@+id/allNew"
-        android:layout_weight="1"
-        android:src="@drawable/ic_home_black_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
-    <ImageView
-        android:id="@+id/search"
-        android:tint="@color/customGrey"
-        android:layout_weight="1"
-        android:src="@drawable/ic_search_black_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
-    <ImageView
-        android:id="@+id/addNew"
-        android:tint="@color/customGrey"
-        android:layout_weight="1"
-        android:src="@drawable/ic_add_circle_black_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
-    <ImageView
-        android:id="@+id/event"
-        android:tint="@color/customGrey"
-        android:layout_weight="1"
-        android:src="@drawable/ic_favorite_black_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
-    <ImageView
-        android:id="@+id/profile"
-        android:tint="@color/customGrey"
-        android:layout_weight="1"
-        android:src="@drawable/ic_person_black_24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
+            <ImageView
+                android:id="@+id/allNew"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_home_black_24dp" />
 
-</LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_search_black_24dp"
+                android:tint="@color/customGrey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/addNewClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/addNew"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_add_circle_black_24dp"
+                android:tint="@color/customGrey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/eventClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/event"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_favorite_black_24dp"
+                android:tint="@color/customGrey" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profileClick"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_person_black_24dp"
+                android:tint="@color/customGrey" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
 
 </RelativeLayout>
